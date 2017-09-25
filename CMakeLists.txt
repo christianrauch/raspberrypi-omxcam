@@ -23,3 +23,9 @@ add_library(omxcam ${SRC})
 target_link_libraries(omxcam openmaxil bcm_host)
 
 add_subdirectory(examples)
+
+install(TARGETS omxcam
+    ARCHIVE DESTINATION lib
+    LIBRARY DESTINATION lib
+    RUNTIME DESTINATION bin)
+install(DIRECTORY include/ DESTINATION include)
