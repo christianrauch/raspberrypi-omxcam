@@ -1,0 +1,9 @@
+# - Config file for the omxcam package
+# It defines the following variables
+#  OMXCAM_INCLUDE_DIRS - include directories for FooBar
+#  OMXCAM_LIBRARIES    - libraries to link against
+#  OMXCAM_LIBRARY_DIRS - libraries directories for omxcam
+
+set(OMXCAM_INCLUDE_DIRS "@CONF_INCLUDE_DIRS@")
+set(OMXCAM_LIBRARIES omxcam openmaxil bcm_host)
+set(OMXCAM_LIBRARY_DIRS "@CONF_LIBRARY_DIRS@")
